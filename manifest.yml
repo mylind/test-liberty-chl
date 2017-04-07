@@ -1,0 +1,11 @@
+applications:
+- path: target/JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: test-liberty-chl
+  host: test-liberty-chl
+  disk_quota: 1024M
+  services:
+  - Compose for MongoDB-3r
+  - test-liberty-chl-cloudantNoSQLDB
